@@ -1,0 +1,34 @@
+----------- README -----------
+To run the code type the following command:
+$python run_models.py
+
+You may need to install some libraries if you have not them already installed:
+- numpy
+- scipy
+- sklearn
+- nolearn
+
+The code will go search for the audio directory for the .wav file and matching .txt files.
+Matching is done based on names of file and locations.
+
+It will output performance for DBN model. If you want to test another model,
+go to run_models.py and look for the following lines to uncomment:
+#compute_gmm(data_features, target, n_classes)
+#compute_hmm(data_features, target, n_classes)
+
+You can also easily chnage the number of features taken into account. For this look
+in the run_models.py file for the following line and change the value for the number
+of features you want to consider.
+#nb_features = 13
+
+For more tuning on selection of features & labels to give to the model, please refer to
+the get_features.py file, where you will find boolean conditions that you can set on/off as
+you wish to test the different possible combinations and their impact on the performance.
+
+
+Team 4
+Chandra Khatri
+Sam Seifert
+Sophie Barlet
+Timothy Storm
+
